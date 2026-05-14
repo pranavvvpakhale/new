@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart | Spark Electronics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="loader">
+    <div class="spinner"></div>
+    <p>Preparing your cart...</p>
+  </div>
+
+  <header class="navbar">
+    <div class="logo">Spark Electronics</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html" class="active">Cart <span id="cartCount" class="badge">0</span></a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Logout</a>
+    </nav>
+  </header>
+
+  <main class="cart-page">
+    <section class="cart-items-container">
+      <h1>Your Shopping Cart</h1>
+      <div id="cartItems"></div>
+    </section>
+
+    <aside class="order-summary">
+      <h2>Order Summary</h2>
+      <p><span>Items:</span> <span id="totalItems">0</span></p>
+      <p><span>Subtotal:</span> <span id="subtotal">₹0</span></p>
+      <p><span>Delivery:</span> <span id="delivery">₹99</span></p>
+      <hr>
+      <p class="grand-total"><span>Total:</span> <span id="totalPrice">₹0</span></p>
+
+      <div class="payment-box">
+        <h3>Payment Method</h3>
+        <label><input type="radio" name="payment" checked> UPI</label>
+        <label><input type="radio" name="payment"> Card</label>
+        <label><input type="radio" name="payment"> Cash on Delivery</label>
+      </div>
+
+      <button id="checkoutBtn" class="btn primary-btn full-width">Proceed to Checkout</button>
+    </aside>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

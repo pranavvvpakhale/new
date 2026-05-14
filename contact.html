@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Spark Electronics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="loader">
+    <div class="spinner"></div>
+    <p>Connecting support page...</p>
+  </div>
+
+  <header class="navbar">
+    <div class="logo">Spark Electronics</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart <span id="cartCount" class="badge">0</span></a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="login.html">Logout</a>
+    </nav>
+  </header>
+
+  <main class="contact-page">
+    <section class="contact-info">
+      <h1>Contact Spark Electronics</h1>
+      <p><strong>Address:</strong> Jeevan Jyoti Society, Pune</p>
+      <p><strong>Phone:</strong> 9764310530, 9075230272</p>
+      <p><strong>Email:</strong> pranavpakhale15@gmail.com</p>
+
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+
+        <label for="contactEmail">Email</label>
+        <input type="email" id="contactEmail" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn primary-btn">Send Message</button>
+      </form>
+    </section>
+
+    <section class="map-section">
+      <h2>Find Us in Pune</h2>
+      <iframe
+        src="https://maps.google.com/maps?q=Pune&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Pune location map">
+      </iframe>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

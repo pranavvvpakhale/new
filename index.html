@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spark Electronics | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="loader">
+      <div class="spinner"></div>
+      <p>Loading products...</p>
+    </div>
+
+    <header class="navbar">
+      <div class="logo">Spark Electronics</div>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="cart.html">Cart <span id="cartCount" class="badge">0</span></a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Logout</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Welcome to Spark Electronics</h1>
+          <p>
+            Shop top-rated phones, laptops, and accessories with fast and smooth
+            checkout.
+          </p>
+          <a href="#featured-products" class="btn primary-btn"
+            >Explore Products</a
+          >
+        </div>
+      </section>
+
+      <section class="filters-section">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search gadgets..."
+          aria-label="Search products"
+        />
+        <div class="category-buttons">
+          <button class="category-btn active" data-category="All">All</button>
+          <button class="category-btn" data-category="Mobiles">Mobiles</button>
+          <button class="category-btn" data-category="Laptops">Laptops</button>
+          <button class="category-btn" data-category="Accessories">
+            Accessories
+          </button>
+        </div>
+      </section>
+
+      <section id="featured-products" class="products-section">
+        <h2>Featured Products</h2>
+        <div id="productGrid" class="product-grid"></div>
+      </section>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
